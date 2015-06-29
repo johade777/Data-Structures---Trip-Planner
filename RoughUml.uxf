@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>336</y>
+      <w>256</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>ParkGraph
+--
+AmusementPark starting
+AmsementPark ending
+int distanceTraveled
+int timeTraveled
+PriorityQueue&lt;Links&gt;
+--
+Boolean insert(AmustmentPark obj)
+AmustmentPark search(AmusmentPark obj)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>688</x>
+      <y>512</y>
+      <w>216</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>AmusementPark
+--
+int levelOfFun
+Point location
+ArrayList&lt;Links&gt; parkConnections
+--
+ArrayList&lt;Links&gt; getLinks()
+int getLevelofFun()
+Point getLocation()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>184</y>
+      <w>216</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>MapPanel
+--
+BufferedImage USA
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>184</y>
+      <w>216</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>ControlPanel
+--
+JTextField startingLocation
+JTextField endingLocation
+JRadioButton distance
+JRadioButton time
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>688</x>
+      <y>688</y>
+      <w>216</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Links
+--
+Point park1
+Point park2
+int minutes
+int distance
+--
+int calcDistance()
+int calcTime()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>640</y>
+      <w>24</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>184</y>
+      <w>232</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Main
+--
+JPanel MapPanel
+JPanel ControlPanel
+JFrame frame
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>216</y>
+      <w>120</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>904</x>
+      <y>216</y>
+      <w>112</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>784</x>
+      <y>296</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>784</x>
+      <y>464</y>
+      <w>24</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
